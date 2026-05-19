@@ -10,8 +10,8 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--bg);color:var(--text);font-family:'Open Sans',sans-serif;font-size:14px;line-height:1.5;min-height:100vh;}
 .navbar{background:#fff;border-bottom:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:50;}
-.navbar-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:20px;height:80px;}
-.logo-img{height:64px;width:auto;display:block;flex-shrink:0;}
+.navbar-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:20px;height:100px;}
+.logo-img{height:90px;width:auto;display:block;flex-shrink:0;}
 .nav-div{width:1px;height:36px;background:var(--border);}
 .nav-title{font-size:16px;font-weight:700;color:var(--accent);}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:10px;}
@@ -108,7 +108,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{filter:invert(.3) sepia(1)
     <div class="nav-div"></div>
     <div class="nav-title">Seguimiento de Hitos de Contratos</div>
     <div class="nav-right">
-      <div class="update-info">Datos al: <strong id="dataDate"></strong></div>
+      
     </div>
   </div>
 </nav>
@@ -215,7 +215,7 @@ var DATA = [{"contrato": "Concesión Embalse Las Palmas", "etapa": "Construcció
 var DATA_DATE = "19/05/2026";
 var TODAY = new Date(); TODAY.setHours(0,0,0,0);
 document.getElementById('todayLabel').textContent = TODAY.toLocaleDateString('es-CL',{weekday:'short',year:'numeric',month:'short',day:'numeric'});
-document.getElementById('dataDate').textContent = DATA_DATE;
+document.getElementById('dataDate').textContent = TODAY.toLocaleDateString('es-CL',{day:'2-digit',month:'2-digit',year:'numeric'});
 document.getElementById('heroSub').textContent = DATA.length + ' contratos · Datos al ' + DATA_DATE;
 
 function parseDate(s){var p=s.split('-');var d=new Date(parseInt(p[0]),parseInt(p[1])-1,parseInt(p[2]));d.setHours(0,0,0,0);return d;}
