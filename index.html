@@ -427,7 +427,1020 @@ function limpiarFiltros(){
 }
 
 
-const ADMIN_DATA = [{"id": "c0", "tipoProyecto": "Construcción", "tipoConstruccion": "Soluciones Hídricas", "tipoIniciativa": "Iniciativa Pública", "region": "Valparaíso", "provincia": "Petorca", "comuna": "Petorca", "volumen": "136 m2", "presupuesto": {"uf": 3880000.0, "mmusd": 158.8}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 3880000.0, "mmusd": 158.8}, "empresa": "China Harbour Engineering Company Ltd. (100%)\nCHEC", "sociedad": "Sociedad Concesionaria CHEC Embalse Las Palmas S.A", "gerenteGeneral": {"nombre": "Tao Liu", "correo": "tliu@chec.bj.cn", "telefono": "569 82276509"}, "ifConstruccion": {"nombre": "Lorena Araya Rojas", "correo": "lorena.araya@mop.gov.cl", "telefono": 937427844}, "ifSubConstruccion": {"nombre": "Marión Casanueva González", "correo": "marion.casanueva@mop.gov.cl", "telefono": 954005700}, "consultorAIF": "Consorcio Creaxxion - Stradale", "jefeAIF": {"nombre": "Sergio Matus", "correo": "smatus@stradale.creaxxion.cl", "telefono": "569 84310622"}, "observaciones": null}, {"id": "c1", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Urbana", "tipoIniciativa": "Iniciativa Pública", "region": "Metropolitana", "provincia": "Santiago", "comuna": "La Reina, Macul, Ñuñoa, Peñalolén", "volumen": "5,2 km", "presupuesto": {"uf": 19670000.0, "mmusd": 804.9}, "invMaterializada": {"uf": 4054189.22, "mmusd": 0.0}, "invPorEjecutar": {"uf": 15615810.78, "mmusd": 804.9}, "empresa": "Grupo Costanera SpA", "sociedad": "Sociedad Concesionaria Américo Vespucio Oriente II S.A.", "gerenteGeneral": {"nombre": "Juan Küster", "correo": "kuster@cnorte.cl", "telefono": "562 2694 3470"}, "ifConstruccion": {"nombre": "Antonia Abdo Sepúlveda", "correo": "antonia.abdo@mop.gov.cl", "telefono": "9 8759 7820"}, "ifSubConstruccion": {"nombre": "Claudio Elizalde Bravo", "correo": "claudio.elizalde@mop.gov.cl", "telefono": "9 7861 4365"}, "consultorAIF": "CyD Ingeniería Ltda.", "jefeAIF": {"nombre": "Eduardo Cereceda", "correo": "ecereceda@cydingenieria.com", "telefono": "569 62279659"}, "observaciones": null}, {"id": "c2", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Urbana", "tipoIniciativa": "Iniciativa Pública", "region": "Bío Bío", "provincia": "Concepción", "comuna": "San Pedro de la Paz, Hualpén", "volumen": "6,4 km", "presupuesto": {"uf": 6047405.31, "mmusd": 247.0}, "invMaterializada": {"uf": 5805509.1, "mmusd": 247.0}, "invPorEjecutar": {"uf": 241896.21, "mmusd": 10.05}, "empresa": "Aleatica S.A. (99,995%)                                  \nAleatica S.A.U.(0,005%)", "sociedad": "Sociedad Concesionaria Puente Industrias S.A.", "gerenteGeneral": {"nombre": "Ignacio Batlle Artal", "correo": "ignacio.batlle@aleatica.com", "telefono": "569 5226 8598"}, "ifConstruccion": {"nombre": "Renato Gaete Menéndez", "correo": "renato.gaete@mop.gov.cl", "telefono": "9 7109 2080"}, "ifSubConstruccion": {"nombre": "Ricardo Oyarzo Cárcamo", "correo": "ricardo.oyarzo@mop.gov.cl", "telefono": "9 4410 9559"}, "consultorAIF": "R Y Q INGENIERIA S.A.", "jefeAIF": {"nombre": "Osvaldo Campos", "correo": "osvaldo.campos@ryq.cl", "telefono": "569 73337716"}, "observaciones": null}, {"id": "c3", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Urbana", "tipoIniciativa": "Iniciativa Pública", "region": "Bío Bío", "provincia": "Concepción", "comuna": "Talcahuano", "volumen": "20.000 m2", "presupuesto": {"uf": 843000.0, "mmusd": 35.02}, "invMaterializada": {"uf": 346488.0, "mmusd": 14.39}, "invPorEjecutar": {"uf": 496512.0, "mmusd": 20.62}, "empresa": "Grupo Costanera SpA", "sociedad": "Sociedad Concesionaria Acceso Vial Aeropuerto Arturo Merino Benítez  S.A.", "gerenteGeneral": {"nombre": "Juan Alfredo Küster", "correo": "kuster@cnorte.cl", "telefono": "569 98176310"}, "ifConstruccion": {"nombre": "Claudio Elizalde  Bravo", "correo": "claudio.elizalde@mop.gov.cl", "telefono": "9 7861 4365"}, "ifSubConstruccion": {"nombre": "Antonia Abdo Sepúlveda", "correo": "antonia.abdo@mop.gov.cl", "telefono": "9 8759 7820"}, "consultorAIF": "CyD Ingeniería", "jefeAIF": {"nombre": "José Pedro López Belmar", "correo": "jplopez@cydingenieria.cl", "telefono": "569 63006819"}, "observaciones": null}, {"id": "c4", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Valparaíso", "provincia": "Valparaíso, Quillota", "comuna": "Puchuncaví, Quintero y Nogales", "volumen": "43 km", "presupuesto": {"uf": 5250000.0, "mmusd": 215.0}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 5250000.0, "mmusd": 218.08}, "empresa": "Aleatica S.A. (ex -OHL Concesiones)(0,4%)                                  Aleatica S.A.U.(99,6%)", "sociedad": "Sociedad Concesionaria Nuevo Camino Nogales Puchuncavi S.A.", "gerenteGeneral": {"nombre": "Ignacio Batlle", "correo": "ignacio.batlle@aleatica.com", "telefono": "569 52268598"}, "ifConstruccion": {"nombre": "Andrés Silva Vargas", "correo": "andres.silva@mop.gov.cl", "telefono": "9 4243 9029"}, "ifSubConstruccion": {"nombre": "Claudio Andrés Asenjo Schultz", "correo": "claudio.asenjo@mop.gov.cl", "telefono": "9 9518 7700"}, "consultorAIF": "CREAXXION INGENIEROS CONSULTORES", "jefeAIF": {"nombre": "Alejandro Monserrat", "correo": "amonserrat@creaxxion.cl", "telefono": "569 83270092"}, "observaciones": null}, {"id": "c5", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Valparaíso, Metropolitana y Libertador Bernardo O'Higgins", "provincia": "San Antonio y Cachapoal", "comuna": "Malloa, San Vicente de Tagua Tagua,Peumo,Las Cabras, San Pedro, Santo Domingo y San Antonio", "volumen": "141 kms", "presupuesto": {"uf": 13425000.0, "mmusd": 558.0}, "invMaterializada": {"uf": 126683.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 13298317.0, "mmusd": 558.0}, "empresa": "Consorcio Sacyr", "sociedad": "Sociedad Concesionaria Ruta de la Fruta S.A.", "gerenteGeneral": {"nombre": "Cristián Encalada Vidal", "correo": "cencalada@sacyr.com", "telefono": "569 92748766"}, "ifConstruccion": {"nombre": "Silvana Frontier Frontier", "correo": "silvana.frontier@mop.gov.cl", "telefono": "9 6727 2220"}, "ifSubConstruccion": {"nombre": "Víctor Raymondi Eldan", "correo": "victor.raymondi@mop.gov.cl", "telefono": "9 5668 3469"}, "consultorAIF": "CyD Ingeniería Ltda.", "jefeAIF": {"nombre": "Rodrigo Valenzuela F.", "correo": "rvalenzuela@cydingenieria.com", "telefono": "569 99241701"}, "observaciones": null}, {"id": "c6", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Privada", "region": "Bío Bío -  La Araucanía", "provincia": "Bío Bío -  Malleco", "comuna": "Los Angeles, negrete, Angol, Renaico", "volumen": "55 kms", "presupuesto": {"uf": 6125000.0, "mmusd": 254.42}, "invMaterializada": {"uf": 5965750.0, "mmusd": 247.81}, "invPorEjecutar": {"uf": 159250.0, "mmusd": 6.62}, "empresa": "Consorcio BB", "sociedad": "Sociedad Concesionaria Ruta Nahuelbuta S.A.", "gerenteGeneral": {"nombre": "Alfredo Carvajal Molinare", "correo": "acarvajal@besalco.cl", "telefono": "569 81295963"}, "ifConstruccion": {"nombre": "Renato Gaete Menéndez", "correo": "renato.gaete@mop.gov.cl", "telefono": "9 7109 2080"}, "ifSubConstruccion": {"nombre": "Lester Poblete Godoy", "correo": "lester.poblete@mop.gov.cl", "telefono": "9 4209 7903"}, "consultorAIF": "CyD Ingeniería", "jefeAIF": {"nombre": "Marcelo Puentes Garrido", "correo": "mpuentes@cydingenieria.cl", "telefono": "569 7887 6980"}, "observaciones": null}, {"id": "c7", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Privada", "region": "Antofagasta", "provincia": "Antofagasta, El Loa", "comuna": "Sierra Gorda, Calama", "volumen": "136 kms", "presupuesto": {"uf": 7330000.0, "mmusd": 300.0}, "invMaterializada": {"uf": 26639.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 7303361.0, "mmusd": 300.0}, "empresa": "Isa Inversiones Tolten Ltda. (0,0000027%)            Intervial Chile S.A. (99,9999973%)", "sociedad": "Ruta del Loa Sociedad Concesionaria S.A", "gerenteGeneral": {"nombre": "Mario Ballerini F.", "correo": "mballerini@intervialchile.cl", "telefono": "569 93457563"}, "ifConstruccion": {"nombre": "Carlos Andrés Letelier Rodríguez", "correo": "carlos.letelier@mop.gov.cl", "telefono": "9 7422 0031"}, "ifSubConstruccion": {"nombre": "Jaime Yáñez Urzua", "correo": "jaime.yañez@mop.gov.cl", "telefono": "9 3913 4339"}, "consultorAIF": "Creaxxión", "jefeAIF": {"nombre": "Raúl E. Muñoz Espinoza", "correo": "raumunoz@creaxxion.cl", "telefono": "56 9 45570407"}, "observaciones": null}, {"id": "c8", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Privada", "region": "Metropolitana", "provincia": "Santiago", "comuna": "Maipú, Pudahuel", "volumen": "9.17 km", "presupuesto": {"uf": 6100000.0, "mmusd": 249.6}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 6100000.0, "mmusd": 250.0}, "empresa": "Grupo Costanera SpA", "sociedad": "Sociedad Concesionaria Conexión Vial Ruta 78-68 S.A.", "gerenteGeneral": {"nombre": "Juan Alfredo Küster", "correo": "kuster@cnorte.cl", "telefono": "562 26943470"}, "ifConstruccion": {"nombre": "Carlos Andrés Letelier Rodríguez", "correo": "carlos.letelier@mop.gov.cl", "telefono": "9 7422 0031"}, "ifSubConstruccion": {"nombre": "Victor Raymondi Eldan", "correo": "victor.raymondi@mop.gov.cl", "telefono": 957631517}, "consultorAIF": "CONSORCIO INGENIERÍA DE PROYECTOS Y ASESORÍAS LTDA. (STRADALE) / RFA INGENIEROS LTDA.", "jefeAIF": {"nombre": "Guillermo Fernandez Versin", "correo": "gfernandez@str-rfa.cl", "telefono": "56 9 98260125"}, "observaciones": null}, {"id": "c9", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Metropolitana y Valparaíso", "provincia": "Santiago, San Antonio, Talagante y Melipilla", "comuna": "Cartagena, Cerrillos, El monte, Estación Central, Maipú, Melipilla, Pedro Aguirre Cerda, Padre Hurtado, Peñaflor, Santiago, Sn Antonio, Sto. Domingo y Talagante", "volumen": "132,8 km", "presupuesto": {"uf": 21287000.0, "mmusd": 896.68}, "invMaterializada": {"uf": 963203.31, "mmusd": 40.57}, "invPorEjecutar": {"uf": 20323796.69, "mmusd": 97.0}, "empresa": "Sacyr Concesiones Chile SPA.", "sociedad": "Sociedad Concesionaria San Antonio - Santiago S.A.", "gerenteGeneral": {"nombre": "Luis Felipe García Morales", "correo": "lmorales@sacyr.com", "telefono": "569 56572333"}, "ifConstruccion": {"nombre": "Claudio Andres Asenjo Schultz", "correo": "claudio.asenjo@mop.gov.cl", "telefono": "9 9518 7700"}, "ifSubConstruccion": {"nombre": "Andrés Silva Vargas", "correo": "andres.silva.v@mop.gov.cl", "telefono": "9 4243 9029"}, "consultorAIF": "JORGE PIDDO Y CIA. LTDA.", "jefeAIF": {"nombre": "Pedro Quezada Guajardo", "correo": "pedro.quezada@piddo.com", "telefono": "569 33925741"}, "observaciones": null}, {"id": "c10", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Coquimbo", "provincia": "Elqui, Choapa, Limarí", "comuna": "La Serena, Coquimbo, Ovalle, Canela y Los Vilos", "volumen": "245 km", "presupuesto": {"uf": 12155000.0, "mmusd": 497.0}, "invMaterializada": {"uf": 1676454.0, "mmusd": 68.55}, "invPorEjecutar": {"uf": 10478546.0, "mmusd": 428.45}, "empresa": "Sacyr Concesiones Chile SPA.", "sociedad": "Sociedad Concesionaria Ruta del Elqui", "gerenteGeneral": {"nombre": "Ignacio Hierro Honores", "correo": "iahierro@sacyr.com", "telefono": "569 62071072"}, "ifConstruccion": {"nombre": "Jaime Yáñez Urzua", "correo": "jaime.yañez@mop.gov.cl", "telefono": "9 3913 4339"}, "ifSubConstruccion": {"nombre": "Carlos Andrés Letelier Rodriguez", "correo": "carlos.letelier@mop.gov.cl", "telefono": "9 7422 0031"}, "consultorAIF": "AXIOMA INGENIEROS CONSULTORES S.A.", "jefeAIF": {"nombre": "Fermin Aravena Alarcon", "correo": "fermin.aravena@axioma.cl", "telefono": "569 91376403"}, "observaciones": null}, {"id": "c11", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Maule, Ñuble", "provincia": "Talca, Linares, Punilla y Diguillin", "comuna": "Rio Claro, San Rafael, Pelarco, Talca, Maule, San Javier, Villa Alegre, Yerbas Buenas, Linares, Longavi, Retiro, Parral, Ñiquen, San Carlos, San Nicolas, Chillan y Chillan Viejo", "volumen": "195 kms", "presupuesto": {"uf": 19180000.0, "mmusd": 785.0}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 19180000.0, "mmusd": 796.71}, "empresa": "Consorcio CRCC", "sociedad": "Sociedad Concesionada Survias Maule - Ñuble S.A.", "gerenteGeneral": {"nombre": "Lou ShuYuan", "correo": "loushuyuan@survias.cl", "telefono": "569 99377026"}, "ifConstruccion": {"nombre": "Lester Poblete Godoy", "correo": "lester.poblete@mop.gov.cl", "telefono": "9 4209 7903"}, "ifSubConstruccion": {"nombre": "Ricardo Oyarzo Cárcamo", "correo": "ricardo.oyarzo@mop.gov.cl", "telefono": "9 4410 9559"}, "consultorAIF": "CONSORCIO CREAXXION - GAUSS - MAB", "jefeAIF": {"nombre": "Jorge Lasserre Fischman", "correo": "jlasserre@creaxxion.cl", "telefono": "569 96437111"}, "observaciones": "Contrato con notificaciones de incumplimiento y multas.\nFechas de incio dependen de EIA (RCA): Sector 1 Puentes, Sector 2 Baipás"}, {"id": "c12", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Ñuble, Biobio y La Araucanía", "provincia": "Diguillin, Biobio y Malleco", "comuna": "Chillan Viejo, Bulnes, Pemuco, Cabrero, Los Angeles, Mulchén, Collipulli y Ercilla", "volumen": "169 kms", "presupuesto": {"uf": 14215000.0, "mmusd": 596.0}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 14215000.0, "mmusd": 596.0}, "empresa": "China Railway Construcción Corporation Limited", "sociedad": "Sociedad Concesionaria Ruta 5 Chillan Collipulli S.A.", "gerenteGeneral": {"nombre": "Sheng Jianhui", "correo": "shengjianhui@crcc-america.com", "telefono": "569 87436127"}, "ifConstruccion": {"nombre": "Lester Poblete Godoy", "correo": "lester.poblete@mop.gov.cl", "telefono": "9 4209 7903"}, "ifSubConstruccion": {"nombre": "Renato Gaete Menéndez", "correo": "renato.gaete@mop.gov.cl", "telefono": 971092080}, "consultorAIF": "Axioma S.A.", "jefeAIF": {"nombre": "Juan Mora Millas", "correo": "juan.mora@axioma.cl", "telefono": "569 63427075"}, "observaciones": null}, {"id": "c13", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Urbana", "tipoIniciativa": "Iniciativa Privada", "region": "Metropolitana", "provincia": "Maipo y Melipilla", "comuna": "San Bernardo, Calera de Tango y Peñaflor", "volumen": "24 km", "presupuesto": {"uf": 11967720.0, "mmusd": 490.0}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 11841037.0, "mmusd": 490.0}, "empresa": "ISA intervial", "sociedad": "Ruta Orbital Sur Sociedad Concesionaria S.A.", "gerenteGeneral": {"nombre": "Mario Ballerini Figueroa", "correo": "mballerini@intervialchile.cl", "telefono": "569 93457563"}, "ifConstruccion": {"nombre": "Marco González Baraona", "correo": "marco.gonzalez@mop.gov.cl", "telefono": "9 9886 2338"}, "ifSubConstruccion": {"nombre": "Claudio Elizalde Bravo", "correo": "claudio.elizalde@mop.gov.cl", "telefono": "9 7861 4365"}, "consultorAIF": "Axioma Ingenieros Consultores", "jefeAIF": {"nombre": "José Gaiska Barría Keay", "correo": "jose.barria@axioma.cl", "telefono": "569 56593597"}, "observaciones": null}, {"id": "c14", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Metropolitana, Valparaíso y Coquimbo", "provincia": null, "comuna": "Quilicura,Colina,Lampa,Til til,Llay-Llay,La Calera,Nogales,Zapallar,La Ligua, Papudo y Los Vilos", "volumen": "223,4 km", "presupuesto": {"uf": 28288000.0, "mmusd": 1123.8}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 28288000.0, "mmusd": 0.0}, "empresa": "Vías Chile S.A.", "sociedad": "Nueva Aconcagua S.A", "gerenteGeneral": {"nombre": "Andrés Barberis Martin", "correo": "andres.barberis@viaschile.cl", "telefono": "562 27142300"}, "ifConstruccion": {"nombre": "Ricardo Oyarzo Cárcamo", "correo": "ricardo.oyarzo@mop.gov.cl", "telefono": "9 4410 9559"}, "ifSubConstruccion": {"nombre": "Claudio Luna González", "correo": "claudio.luna@mop.gov.cl", "telefono": "9 4247 1732"}, "consultorAIF": "CyD Ingeniería Ltda.", "jefeAIF": {"nombre": "Walter Wilson Rojas", "correo": "wwilson@cydingenieria.cl", "telefono": "569 54640832"}, "observaciones": null}, {"id": "c15", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Urbana", "tipoIniciativa": "Iniciativa Pública", "region": "Ñuble y Bío Bío", "provincia": "Diguillin, Itata y Concepción", "comuna": "Chillan viejo, Chillan, Ranquil, Tome ,Concepción y  Penco", "volumen": "96 km", "presupuesto": {"uf": 12527000.0, "mmusd": 564.0}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 12527000.0, "mmusd": 0.0}, "empresa": "Sacyr Concesiones Chile SpA", "sociedad": "Concesión Ruta del Itata", "gerenteGeneral": {"nombre": "Juan Antonio Vasconcellos Ibarra", "correo": "javasconcellos@sacyr.com", "telefono": "569 64689981"}, "ifConstruccion": {"nombre": "Arturo Parada Valenzuela", "correo": "arturo.parada@mop.gov.cl", "telefono": "9 9970 7944"}, "ifSubConstruccion": {"nombre": "Renato Gaete Menéndez", "correo": "renato.gaete@mop.gov.cl", "telefono": "9 7109 2080"}, "consultorAIF": "Axioma Ingenieros Consultores S.A.", "jefeAIF": {"nombre": "Jaime Ramos Ordenes", "correo": "jaime.ramos@axioma.cl", "telefono": "569 96397040"}, "observaciones": null}, {"id": "c16", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Metropolitana y Valparaíso", "provincia": "Santiago, Marga Marga, Melipilla y Valparaíso", "comuna": "Lo Prado, Maipú, Pudahuel, Curacaví, Casablanca, Valparaíso, Viña del Mar, Quilpué y Villa Alemana", "volumen": "140,7 km", "presupuesto": {"uf": 35970000.0, "mmusd": 1291.32}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 35970000.0, "mmusd": 1291.32}, "empresa": "Sacyr Concesiones Chile SpA", "sociedad": "Sociedad Concesionaria Ruta 68 a la Costa S.A.", "gerenteGeneral": {"nombre": "José Ricardo González Concha", "correo": "jrgonzalez@sacyr.com", "telefono": "569 74955706"}, "ifConstruccion": {"nombre": "Claudio Luna González", "correo": "claudio.luna@mop.gov.cl", "telefono": "9 4247 1732"}, "ifSubConstruccion": {"nombre": "Ricardo Oyarzo Cárcamo", "correo": "ricardo.oyarzo@mop.gov.cl", "telefono": "9 4410 9559"}, "consultorAIF": "Consorcio Stradale-RFA", "jefeAIF": {"nombre": "René Monsalve", "correo": "6253-rmonsalve@str-rfa.cl", "telefono": "569 77479110"}, "observaciones": null}, {"id": "c17", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Araucanía y Los Ríos", "provincia": "Cautín, Valdivia y Ranco", "comuna": "Gorbea, Loncoche, Lanco, San José de la Mariquina, Máfil, Los Lagos, Paillaco, La Unión y Río Bueno", "volumen": "181,75 km", "presupuesto": {"uf": 19330000.0, "mmusd": 693.95}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 19330000.0, "mmusd": 693.95}, "empresa": "Grupo Costanera SpA", "sociedad": "Sociedad Concesionaria Temuco – Río Bueno S.A.", "gerenteGeneral": {"nombre": "Julio Fonck", "correo": "julio.fonck@gesvial.cl", "telefono": "569 7959 6594"}, "ifConstruccion": {"nombre": "Victor Raymondi Eldan", "correo": "victor.raymondi@mop.gov.cl", "telefono": "9 5668 3469"}, "ifSubConstruccion": {"nombre": "Carlos Andrés Letelier Rodríguez", "correo": "carlos.letelier@mop.gov.cl", "telefono": "9 7422 0031"}, "consultorAIF": "Axioma Ingenieros Consultores S.A.", "jefeAIF": {"nombre": "Franklin Soza", "correo": "franklin.soza@axioma.cl", "telefono": "569 78582575"}, "observaciones": null}, {"id": "c18", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Los Lagos", "provincia": "Chiloé", "comuna": "Ancud, Dalcahue, Castro y Chonchi", "volumen": "110 km", "presupuesto": {"uf": 16545961.0, "mmusd": 594.0}, "invMaterializada": {"uf": 0.0, "mmusd": 0.0}, "invPorEjecutar": {"uf": 16545961.0, "mmusd": 594.0}, "empresa": "Grupo Costanera SpA", "sociedad": "Sociedad Concesionaria Tramo Chacao - Chonchi", "gerenteGeneral": {"nombre": "Diego Savino Beltrán", "correo": "savino@cnorte.cl", "telefono": null}, "ifConstruccion": {"nombre": "Jazmine Pizarro Opazo", "correo": "jazmine.pizarro@mop.gov.cl", "telefono": "9 9343 0894"}, "ifSubConstruccion": {"nombre": "Nicole Albornoz González", "correo": "nicole.albornoz@mop.gov.cl", "telefono": "9 9977 7274"}, "consultorAIF": "Consorcio Axioma - Bersal", "jefeAIF": {"nombre": "Carlos Gutiérrez", "correo": "carlos.gutierrez@axioma.bersal.cl", "telefono": "569 81541935"}, "observaciones": null}, {"id": "c19", "tipoProyecto": "Construcción", "tipoConstruccion": "Soluciones Hídricas", "tipoIniciativa": "Iniciativa Pública", "region": "Coquimbo", "provincia": "Elqui", "comuna": "Coquimbo", "volumen": "1.200 litros/segundos de agua", "presupuesto": {"uf": 8195000.0, "mmusd": 325.0}, "invMaterializada": {"uf": null, "mmusd": null}, "invPorEjecutar": {"uf": null, "mmusd": null}, "empresa": "Sacyr Agua S.L.", "sociedad": "Sociedad Concesionaria Desaladora de Panul S.A", "gerenteGeneral": {"nombre": "Lucas de Marcos de La Torre", "correo": "lmtorre@sacyr.com", "telefono": 56958775483}, "ifConstruccion": {"nombre": "Lorena Araya Rojas", "correo": "lorena.araya@mop.gov.cl", "telefono": 937427844}, "ifSubConstruccion": {"nombre": "Marión Casanueva González", "correo": "marion.casanueva@mop.gov.cl", "telefono": 954005700}, "consultorAIF": "CyD Ingeniería Ltda.", "jefeAIF": {"nombre": null, "correo": null, "telefono": null}, "observaciones": null}, {"id": "c20", "tipoProyecto": "Operación y Construcción", "tipoConstruccion": "Infraestructura Vial Interurbana", "tipoIniciativa": "Iniciativa Pública", "region": "Los Lagos", "provincia": "Osorno y Llanquihue", "comuna": "San Pablo, Osorno, Río Negro, Purranque, Frutillar, Llanquihue, Puerto Varas y Puerto Montt", "volumen": "128,9 km", "presupuesto": {"uf": 20740000.0, "mmusd": 821.0}, "invMaterializada": {"uf": null, "mmusd": null}, "invPorEjecutar": {"uf": null, "mmusd": null}, "empresa": "Intervial Chile S.A.", "sociedad": null, "gerenteGeneral": {"nombre": null, "correo": null, "telefono": null}, "ifConstruccion": {"nombre": "Victor Raymondi Eldan", "correo": "victor.raymondi@mop.gov.cl", "telefono": 957631517}, "ifSubConstruccion": {"nombre": "Jazmine Pizarro Opazo", "correo": "jazmine.pizarro@mop.gov.cl", "telefono": "9 9343 0894"}, "consultorAIF": null, "jefeAIF": {"nombre": null, "correo": null, "telefono": null}, "observaciones": null}, {"id": "c21", "tipoProyecto": "Construcción", "tipoConstruccion": "Infraestructura Vial Urbana", "tipoIniciativa": "Iniciativa Pública", "region": "Biobío", "provincia": "Biobío y Concepción", "comuna": "Coronel y San Pedro de la Paz", "volumen": "20 km", "presupuesto": {"uf": 9888579.39, "mmusd": 355.0}, "invMaterializada": {"uf": null, "mmusd": null}, "invPorEjecutar": {"uf": null, "mmusd": null}, "empresa": "Sacyr Concesiones Chile SpA.", "sociedad": null, "gerenteGeneral": {"nombre": null, "correo": null, "telefono": null}, "ifConstruccion": {"nombre": null, "correo": null, "telefono": null}, "ifSubConstruccion": {"nombre": null, "correo": null, "telefono": null}, "consultorAIF": null, "jefeAIF": {"nombre": null, "correo": null, "telefono": null}, "observaciones": "Decreto de adjudicación N°137 del 15/04/2026. Contrato en etapa inicial, sin equipo de inspección fiscal asignado aún."}];
+const ADMIN_DATA = [
+ {
+  "id": "c0",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Soluciones Hídricas",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Valparaíso",
+  "provincia": "Petorca",
+  "comuna": "Petorca",
+  "volumen": "136 m2",
+  "presupuesto": {
+   "uf": 3880000.0,
+   "mmusd": 158.8
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 3880000.0,
+   "mmusd": 158.8
+  },
+  "empresa": "China Harbour Engineering Company Ltd. (100%)\nCHEC",
+  "sociedad": "Sociedad Concesionaria CHEC Embalse Las Palmas S.A",
+  "gerenteGeneral": {
+   "nombre": "Tao Liu",
+   "correo": "tliu@chec.bj.cn",
+   "telefono": "569 82276509"
+  },
+  "ifConstruccion": {
+   "nombre": "Lorena Araya Rojas",
+   "correo": "lorena.araya@mop.gov.cl",
+   "telefono": 937427844
+  },
+  "ifSubConstruccion": {
+   "nombre": "Marión Casanueva González",
+   "correo": "marion.casanueva@mop.gov.cl",
+   "telefono": 954005700
+  },
+  "consultorAIF": "Consorcio Creaxxion - Stradale",
+  "jefeAIF": {
+   "nombre": "Sergio Matus",
+   "correo": "smatus@stradale.creaxxion.cl",
+   "telefono": "569 84310622"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c1",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Urbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Metropolitana",
+  "provincia": "Santiago",
+  "comuna": "La Reina, Macul, Ñuñoa, Peñalolén",
+  "volumen": "5,2 km",
+  "presupuesto": {
+   "uf": 19670000.0,
+   "mmusd": 804.9
+  },
+  "invMaterializada": {
+   "uf": 4054189.22,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 15615810.78,
+   "mmusd": 804.9
+  },
+  "empresa": "Grupo Costanera SpA",
+  "sociedad": "Sociedad Concesionaria Américo Vespucio Oriente II S.A.",
+  "gerenteGeneral": {
+   "nombre": "Juan Küster",
+   "correo": "kuster@cnorte.cl",
+   "telefono": "562 2694 3470"
+  },
+  "ifConstruccion": {
+   "nombre": "Antonia Abdo Sepúlveda",
+   "correo": "antonia.abdo@mop.gov.cl",
+   "telefono": "9 8759 7820"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Claudio Elizalde Bravo",
+   "correo": "claudio.elizalde@mop.gov.cl",
+   "telefono": "9 7861 4365"
+  },
+  "consultorAIF": "CyD Ingeniería Ltda.",
+  "jefeAIF": {
+   "nombre": "Eduardo Cereceda",
+   "correo": "ecereceda@cydingenieria.com",
+   "telefono": "569 62279659"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c2",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Urbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Bío Bío",
+  "provincia": "Concepción",
+  "comuna": "San Pedro de la Paz, Hualpén",
+  "volumen": "6,4 km",
+  "presupuesto": {
+   "uf": 6047405.31,
+   "mmusd": 247.0
+  },
+  "invMaterializada": {
+   "uf": 5805509.1,
+   "mmusd": 247.0
+  },
+  "invPorEjecutar": {
+   "uf": 241896.21,
+   "mmusd": 10.05
+  },
+  "empresa": "Aleatica S.A. (99,995%)                                  \nAleatica S.A.U.(0,005%)",
+  "sociedad": "Sociedad Concesionaria Puente Industrias S.A.",
+  "gerenteGeneral": {
+   "nombre": "Ignacio Batlle Artal",
+   "correo": "ignacio.batlle@aleatica.com",
+   "telefono": "569 5226 8598"
+  },
+  "ifConstruccion": {
+   "nombre": "Renato Gaete Menéndez",
+   "correo": "renato.gaete@mop.gov.cl",
+   "telefono": "9 7109 2080"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Ricardo Oyarzo Cárcamo",
+   "correo": "ricardo.oyarzo@mop.gov.cl",
+   "telefono": "9 4410 9559"
+  },
+  "consultorAIF": "R Y Q INGENIERIA S.A.",
+  "jefeAIF": {
+   "nombre": "Osvaldo Campos",
+   "correo": "osvaldo.campos@ryq.cl",
+   "telefono": "569 73337716"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c3",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Urbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Bío Bío",
+  "provincia": "Concepción",
+  "comuna": "Talcahuano",
+  "volumen": "20.000 m2",
+  "presupuesto": {
+   "uf": 843000.0,
+   "mmusd": 35.02
+  },
+  "invMaterializada": {
+   "uf": 487219.0,
+   "mmusd": 20.24
+  },
+  "invPorEjecutar": {
+   "uf": 355781.0,
+   "mmusd": 14.78
+  },
+  "empresa": "Grupo Costanera SpA",
+  "sociedad": "Sociedad Concesionaria Acceso Vial Aeropuerto Arturo Merino Benítez  S.A.",
+  "gerenteGeneral": {
+   "nombre": "Juan Alfredo Küster",
+   "correo": "kuster@cnorte.cl",
+   "telefono": "569 98176310"
+  },
+  "ifConstruccion": {
+   "nombre": "Claudio Elizalde  Bravo",
+   "correo": "claudio.elizalde@mop.gov.cl",
+   "telefono": "9 7861 4365"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Antonia Abdo Sepúlveda",
+   "correo": "antonia.abdo@mop.gov.cl",
+   "telefono": "9 8759 7820"
+  },
+  "consultorAIF": "CyD Ingeniería",
+  "jefeAIF": {
+   "nombre": "José Pedro López Belmar",
+   "correo": "jplopez@cydingenieria.cl",
+   "telefono": "569 63006819"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c4",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Valparaíso",
+  "provincia": "Valparaíso, Quillota",
+  "comuna": "Puchuncaví, Quintero y Nogales",
+  "volumen": "43 km",
+  "presupuesto": {
+   "uf": 5250000.0,
+   "mmusd": 215.0
+  },
+  "invMaterializada": {
+   "uf": 270089.33,
+   "mmusd": 11.22
+  },
+  "invPorEjecutar": {
+   "uf": 4979910.67,
+   "mmusd": 206.86
+  },
+  "empresa": "Aleatica S.A. (ex -OHL Concesiones)(0,4%)                                  Aleatica S.A.U.(99,6%)",
+  "sociedad": "Sociedad Concesionaria Nuevo Camino Nogales Puchuncavi S.A.",
+  "gerenteGeneral": {
+   "nombre": "Ignacio Batlle",
+   "correo": "ignacio.batlle@aleatica.com",
+   "telefono": "569 52268598"
+  },
+  "ifConstruccion": {
+   "nombre": "Andrés Silva Vargas",
+   "correo": "andres.silva@mop.gov.cl",
+   "telefono": "9 4243 9029"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Claudio Andrés Asenjo Schultz",
+   "correo": "claudio.asenjo@mop.gov.cl",
+   "telefono": "9 9518 7700"
+  },
+  "consultorAIF": "CREAXXION INGENIEROS CONSULTORES",
+  "jefeAIF": {
+   "nombre": "Alejandro Monserrat",
+   "correo": "amonserrat@creaxxion.cl",
+   "telefono": "569 83270092"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c5",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Valparaíso, Metropolitana y Libertador Bernardo O'Higgins",
+  "provincia": "San Antonio y Cachapoal",
+  "comuna": "Malloa, San Vicente de Tagua Tagua,Peumo,Las Cabras, San Pedro, Santo Domingo y San Antonio",
+  "volumen": "141 kms",
+  "presupuesto": {
+   "uf": 13425000.0,
+   "mmusd": 558.0
+  },
+  "invMaterializada": {
+   "uf": 126683.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 13298317.0,
+   "mmusd": 558.0
+  },
+  "empresa": "Consorcio Sacyr",
+  "sociedad": "Sociedad Concesionaria Ruta de la Fruta S.A.",
+  "gerenteGeneral": {
+   "nombre": "Cristián Encalada Vidal",
+   "correo": "cencalada@sacyr.com",
+   "telefono": "569 92748766"
+  },
+  "ifConstruccion": {
+   "nombre": "Marco González Baraona",
+   "correo": "marco.gonzalez@mop.gov.cl",
+   "telefono": "9 9886 2338"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Claudio Andrés Asenjo Schultz",
+   "correo": "claudio.asenjo@mop.gov.cl",
+   "telefono": "9 9518 7700"
+  },
+  "consultorAIF": "CyD Ingeniería Ltda.",
+  "jefeAIF": {
+   "nombre": "Rodrigo Valenzuela F.",
+   "correo": "rvalenzuela@cydingenieria.com",
+   "telefono": "569 99241701"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c6",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Privada",
+  "region": "Bío Bío -  La Araucanía",
+  "provincia": "Bío Bío -  Malleco",
+  "comuna": "Los Angeles, negrete, Angol, Renaico",
+  "volumen": "55 kms",
+  "presupuesto": {
+   "uf": 6125000.0,
+   "mmusd": 254.42
+  },
+  "invMaterializada": {
+   "uf": 5965750.0,
+   "mmusd": 247.81
+  },
+  "invPorEjecutar": {
+   "uf": 159250.0,
+   "mmusd": 6.62
+  },
+  "empresa": "Consorcio BB",
+  "sociedad": "Sociedad Concesionaria Ruta Nahuelbuta S.A.",
+  "gerenteGeneral": {
+   "nombre": "Alfredo Carvajal Molinare",
+   "correo": "acarvajal@besalco.cl",
+   "telefono": "569 81295963"
+  },
+  "ifConstruccion": {
+   "nombre": "Renato Gaete Menéndez",
+   "correo": "renato.gaete@mop.gov.cl",
+   "telefono": "9 7109 2080"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Lester Poblete Godoy",
+   "correo": "lester.poblete@mop.gov.cl",
+   "telefono": "9 4209 7903"
+  },
+  "consultorAIF": "CyD Ingeniería",
+  "jefeAIF": {
+   "nombre": "Marcelo Puentes Garrido",
+   "correo": "mpuentes@cydingenieria.cl",
+   "telefono": "569 7887 6980"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c7",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Privada",
+  "region": "Antofagasta",
+  "provincia": "Antofagasta, El Loa",
+  "comuna": "Sierra Gorda, Calama",
+  "volumen": "136 kms",
+  "presupuesto": {
+   "uf": 7330000.0,
+   "mmusd": 300.0
+  },
+  "invMaterializada": {
+   "uf": 26639.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 7303361.0,
+   "mmusd": 300.0
+  },
+  "empresa": "Isa Inversiones Tolten Ltda. (0,0000027%)            Intervial Chile S.A. (99,9999973%)",
+  "sociedad": "Ruta del Loa Sociedad Concesionaria S.A",
+  "gerenteGeneral": {
+   "nombre": "Mario Ballerini F.",
+   "correo": "mballerini@intervialchile.cl",
+   "telefono": "569 93457563"
+  },
+  "ifConstruccion": {
+   "nombre": "Carlos Andrés Letelier Rodríguez",
+   "correo": "carlos.letelier@mop.gov.cl",
+   "telefono": "9 7422 0031"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Jaime Yáñez Urzua",
+   "correo": "jaime.yañez@mop.gov.cl",
+   "telefono": "9 3913 4339"
+  },
+  "consultorAIF": "Creaxxión",
+  "jefeAIF": {
+   "nombre": "Raúl E. Muñoz Espinoza",
+   "correo": "raumunoz@creaxxion.cl",
+   "telefono": "56 9 45570407"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c8",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Privada",
+  "region": "Metropolitana",
+  "provincia": "Santiago",
+  "comuna": "Maipú, Pudahuel",
+  "volumen": "9.17 km",
+  "presupuesto": {
+   "uf": 6100000.0,
+   "mmusd": 249.6
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 6100000.0,
+   "mmusd": 250.0
+  },
+  "empresa": "Grupo Costanera SpA",
+  "sociedad": "Sociedad Concesionaria Conexión Vial Ruta 78-68 S.A.",
+  "gerenteGeneral": {
+   "nombre": "Juan Alfredo Küster",
+   "correo": "kuster@cnorte.cl",
+   "telefono": "562 26943470"
+  },
+  "ifConstruccion": {
+   "nombre": "Carlos Andrés Letelier Rodríguez",
+   "correo": "carlos.letelier@mop.gov.cl",
+   "telefono": "9 7422 0031"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Victor Raymondi Eldan",
+   "correo": "victor.raymondi@mop.gov.cl",
+   "telefono": 957631517
+  },
+  "consultorAIF": "CONSORCIO INGENIERÍA DE PROYECTOS Y ASESORÍAS LTDA. (STRADALE) / RFA INGENIEROS LTDA.",
+  "jefeAIF": {
+   "nombre": "Guillermo Fernandez Versin",
+   "correo": "gfernandez@str-rfa.cl",
+   "telefono": "56 9 98260125"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c9",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Metropolitana y Valparaíso",
+  "provincia": "Santiago, San Antonio, Talagante y Melipilla",
+  "comuna": "Cartagena, Cerrillos, El monte, Estación Central, Maipú, Melipilla, Pedro Aguirre Cerda, Padre Hurtado, Peñaflor, Santiago, Sn Antonio, Sto. Domingo y Talagante",
+  "volumen": "132,8 km",
+  "presupuesto": {
+   "uf": 21287000.0,
+   "mmusd": 892.0
+  },
+  "invMaterializada": {
+   "uf": 38939.45,
+   "mmusd": 40.57
+  },
+  "invPorEjecutar": {
+   "uf": 20323796.69,
+   "mmusd": 97.0
+  },
+  "empresa": "Sacyr Concesiones Chile SPA.",
+  "sociedad": "Sociedad Concesionaria San Antonio - Santiago S.A.",
+  "gerenteGeneral": {
+   "nombre": "Luis Felipe García Morales",
+   "correo": "lmorales@sacyr.com",
+   "telefono": "569 56572333"
+  },
+  "ifConstruccion": {
+   "nombre": "Claudio Andrés Asenjo Schultz",
+   "correo": "claudio.asenjo@mop.gov.cl",
+   "telefono": "9 9518 7700"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Andrés Silva Vargas",
+   "correo": "andres.silva.v@mop.gov.cl",
+   "telefono": "9 4243 9029"
+  },
+  "consultorAIF": "JORGE PIDDO Y CIA. LTDA.",
+  "jefeAIF": {
+   "nombre": "Pedro Quezada Guajardo",
+   "correo": "pedro.quezada@piddo.com",
+   "telefono": "569 33925741"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c10",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Coquimbo",
+  "provincia": "Elqui, Choapa, Limarí",
+  "comuna": "La Serena, Coquimbo, Ovalle, Canela y Los Vilos",
+  "volumen": "245 km",
+  "presupuesto": {
+   "uf": 12155000.0,
+   "mmusd": 497.0
+  },
+  "invMaterializada": {
+   "uf": 1676454.0,
+   "mmusd": 68.55
+  },
+  "invPorEjecutar": {
+   "uf": 10478546.0,
+   "mmusd": 428.45
+  },
+  "empresa": "Sacyr Concesiones Chile SPA.",
+  "sociedad": "Sociedad Concesionaria Ruta del Elqui",
+  "gerenteGeneral": {
+   "nombre": "Ignacio Hierro Honores",
+   "correo": "iahierro@sacyr.com",
+   "telefono": "569 62071072"
+  },
+  "ifConstruccion": {
+   "nombre": "Jaime Yáñez Urzua",
+   "correo": "jaime.yañez@mop.gov.cl",
+   "telefono": "9 3913 4339"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Carlos Andrés Letelier Rodriguez",
+   "correo": "carlos.letelier@mop.gov.cl",
+   "telefono": "9 7422 0031"
+  },
+  "consultorAIF": "AXIOMA INGENIEROS CONSULTORES S.A.",
+  "jefeAIF": {
+   "nombre": "Fermin Aravena Alarcon",
+   "correo": "fermin.aravena@axioma.cl",
+   "telefono": "569 91376403"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c11",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Maule, Ñuble",
+  "provincia": "Talca, Linares, Punilla y Diguillin",
+  "comuna": "Rio Claro, San Rafael, Pelarco, Talca, Maule, San Javier, Villa Alegre, Yerbas Buenas, Linares, Longavi, Retiro, Parral, Ñiquen, San Carlos, San Nicolas, Chillan y Chillan Viejo",
+  "volumen": "195 kms",
+  "presupuesto": {
+   "uf": 19180000.0,
+   "mmusd": 785.0
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 19180000.0,
+   "mmusd": 796.71
+  },
+  "empresa": "Consorcio CRCC",
+  "sociedad": "Sociedad Concesionada Survias Maule - Ñuble S.A.",
+  "gerenteGeneral": {
+   "nombre": "Lou ShuYuan",
+   "correo": "loushuyuan@survias.cl",
+   "telefono": "569 99377026"
+  },
+  "ifConstruccion": {
+   "nombre": "Lester Poblete Godoy",
+   "correo": "lester.poblete@mop.gov.cl",
+   "telefono": "9 4209 7903"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Ricardo Oyarzo Cárcamo",
+   "correo": "ricardo.oyarzo@mop.gov.cl",
+   "telefono": "9 4410 9559"
+  },
+  "consultorAIF": "CONSORCIO CREAXXION - GAUSS - MAB",
+  "jefeAIF": {
+   "nombre": "Jorge Lasserre Fischman",
+   "correo": "jlasserre@creaxxion.cl",
+   "telefono": "569 96437111"
+  },
+  "observaciones": "Contrato con notificaciones de incumplimiento y multas.\nFechas de incio dependen de EIA (RCA): Sector 1 Puentes, Sector 2 Baipás"
+ },
+ {
+  "id": "c12",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Ñuble, Biobio y La Araucanía",
+  "provincia": "Diguillin, Biobio y Malleco",
+  "comuna": "Chillan Viejo, Bulnes, Pemuco, Cabrero, Los Angeles, Mulchén, Collipulli y Ercilla",
+  "volumen": "169 kms",
+  "presupuesto": {
+   "uf": 14215000.0,
+   "mmusd": 596.0
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 14215000.0,
+   "mmusd": 596.0
+  },
+  "empresa": "China Railway Construcción Corporation Limited",
+  "sociedad": "Sociedad Concesionaria Ruta 5 Chillan Collipulli S.A.",
+  "gerenteGeneral": {
+   "nombre": "Sheng Jianhui",
+   "correo": "shengjianhui@crcc-america.com",
+   "telefono": "569 87436127"
+  },
+  "ifConstruccion": {
+   "nombre": "Lester Poblete Godoy",
+   "correo": "lester.poblete@mop.gov.cl",
+   "telefono": "9 4209 7903"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Renato Gaete Menéndez",
+   "correo": "renato.gaete@mop.gov.cl",
+   "telefono": 971092080
+  },
+  "consultorAIF": "Axioma S.A.",
+  "jefeAIF": {
+   "nombre": "Juan Mora Millas",
+   "correo": "juan.mora@axioma.cl",
+   "telefono": "569 63427075"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c13",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Urbana",
+  "tipoIniciativa": "Iniciativa Privada",
+  "region": "Metropolitana",
+  "provincia": "Maipo y Melipilla",
+  "comuna": "San Bernardo, Calera de Tango y Peñaflor",
+  "volumen": "24 km",
+  "presupuesto": {
+   "uf": 11967720.0,
+   "mmusd": 490.0
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 11841037.0,
+   "mmusd": 490.0
+  },
+  "empresa": "ISA intervial",
+  "sociedad": "Ruta Orbital Sur Sociedad Concesionaria S.A.",
+  "gerenteGeneral": {
+   "nombre": "Mario Ballerini Figueroa",
+   "correo": "mballerini@intervialchile.cl",
+   "telefono": "569 93457563"
+  },
+  "ifConstruccion": {
+   "nombre": "Marco González Baraona",
+   "correo": "marco.gonzalez@mop.gov.cl",
+   "telefono": "9 9886 2338"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Claudio Elizalde Bravo",
+   "correo": "claudio.elizalde@mop.gov.cl",
+   "telefono": "9 7861 4365"
+  },
+  "consultorAIF": "Axioma Ingenieros Consultores",
+  "jefeAIF": {
+   "nombre": "José Gaiska Barría Keay",
+   "correo": "jose.barria@axioma.cl",
+   "telefono": "569 56593597"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c14",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Metropolitana, Valparaíso y Coquimbo",
+  "provincia": null,
+  "comuna": "Quilicura,Colina,Lampa,Til til,Llay-Llay,La Calera,Nogales,Zapallar,La Ligua, Papudo y Los Vilos",
+  "volumen": "223,4 km",
+  "presupuesto": {
+   "uf": 28288000.0,
+   "mmusd": 1123.8
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 28288000.0,
+   "mmusd": 0.0
+  },
+  "empresa": "Vías Chile S.A.",
+  "sociedad": "Nueva Aconcagua S.A",
+  "gerenteGeneral": {
+   "nombre": "Andrés Barberis Martin",
+   "correo": "andres.barberis@viaschile.cl",
+   "telefono": "562 27142300"
+  },
+  "ifConstruccion": {
+   "nombre": "Ricardo Oyarzo Cárcamo",
+   "correo": "ricardo.oyarzo@mop.gov.cl",
+   "telefono": "9 4410 9559"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Claudio Luna González",
+   "correo": "claudio.luna@mop.gov.cl",
+   "telefono": "9 4247 1732"
+  },
+  "consultorAIF": "CyD Ingeniería Ltda.",
+  "jefeAIF": {
+   "nombre": "Walter Wilson Rojas",
+   "correo": "wwilson@cydingenieria.cl",
+   "telefono": "569 54640832"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c15",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Urbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Ñuble y Bío Bío",
+  "provincia": "Diguillin, Itata y Concepción",
+  "comuna": "Chillan viejo, Chillan, Ranquil, Tome ,Concepción y  Penco",
+  "volumen": "96 km",
+  "presupuesto": {
+   "uf": 12527000.0,
+   "mmusd": 564.0
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 12527000.0,
+   "mmusd": 0.0
+  },
+  "empresa": "Sacyr Concesiones Chile SpA",
+  "sociedad": "Concesión Ruta del Itata",
+  "gerenteGeneral": {
+   "nombre": "Juan Antonio Vasconcellos Ibarra",
+   "correo": "javasconcellos@sacyr.com",
+   "telefono": "569 64689981"
+  },
+  "ifConstruccion": {
+   "nombre": "Tito Alfonso Fernández Molina",
+   "correo": "tito.fernandez@mop.gov.cl",
+   "telefono": 56992906757
+  },
+  "ifSubConstruccion": {
+   "nombre": "Francisco Carmona Figueroa",
+   "correo": "francisco.carmona@mop.gov.cl",
+   "telefono": 56997632340
+  },
+  "consultorAIF": "Axioma Ingenieros Consultores S.A.",
+  "jefeAIF": {
+   "nombre": "Jaime Ramos Ordenes",
+   "correo": "jaime.ramos@axioma.cl",
+   "telefono": "569 96397040"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c16",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Metropolitana y Valparaíso",
+  "provincia": "Santiago, Marga Marga, Melipilla y Valparaíso",
+  "comuna": "Lo Prado, Maipú, Pudahuel, Curacaví, Casablanca, Valparaíso, Viña del Mar, Quilpué y Villa Alemana",
+  "volumen": "140,7 km",
+  "presupuesto": {
+   "uf": 35970000.0,
+   "mmusd": 1291.32
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 35970000.0,
+   "mmusd": 1291.32
+  },
+  "empresa": "Sacyr Concesiones Chile SpA",
+  "sociedad": "Sociedad Concesionaria Ruta 68 a la Costa S.A.",
+  "gerenteGeneral": {
+   "nombre": "José Ricardo González Concha",
+   "correo": "jrgonzalez@sacyr.com",
+   "telefono": "569 74955706"
+  },
+  "ifConstruccion": {
+   "nombre": "Claudio Luna González",
+   "correo": "claudio.luna@mop.gov.cl",
+   "telefono": "9 4247 1732"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Ricardo Oyarzo Cárcamo",
+   "correo": "ricardo.oyarzo@mop.gov.cl",
+   "telefono": "9 4410 9559"
+  },
+  "consultorAIF": "Consorcio Stradale-RFA",
+  "jefeAIF": {
+   "nombre": "René Monsalve",
+   "correo": "6253-rmonsalve@str-rfa.cl",
+   "telefono": "569 77479110"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c17",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Araucanía y Los Ríos",
+  "provincia": "Cautín, Valdivia y Ranco",
+  "comuna": "Gorbea, Loncoche, Lanco, San José de la Mariquina, Máfil, Los Lagos, Paillaco, La Unión y Río Bueno",
+  "volumen": "181,75 km",
+  "presupuesto": {
+   "uf": 19330000.0,
+   "mmusd": 693.95
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 19330000.0,
+   "mmusd": 693.95
+  },
+  "empresa": "Grupo Costanera SpA",
+  "sociedad": "Sociedad Concesionaria Temuco – Río Bueno S.A.",
+  "gerenteGeneral": {
+   "nombre": "Julio Fonck",
+   "correo": "julio.fonck@gesvial.cl",
+   "telefono": "569 7959 6594"
+  },
+  "ifConstruccion": {
+   "nombre": "Victor Raymondi Eldan",
+   "correo": "victor.raymondi@mop.gov.cl",
+   "telefono": "9 5668 3469"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Carlos Andrés Letelier Rodríguez",
+   "correo": "carlos.letelier@mop.gov.cl",
+   "telefono": "9 7422 0031"
+  },
+  "consultorAIF": "Axioma Ingenieros Consultores S.A.",
+  "jefeAIF": {
+   "nombre": "Franklin Soza",
+   "correo": "franklin.soza@axioma.cl",
+   "telefono": "569 78582575"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c18",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Los Lagos",
+  "provincia": "Chiloé",
+  "comuna": "Ancud, Dalcahue, Castro y Chonchi",
+  "volumen": "110 km",
+  "presupuesto": {
+   "uf": 16545961.0,
+   "mmusd": 594.0
+  },
+  "invMaterializada": {
+   "uf": 0.0,
+   "mmusd": 0.0
+  },
+  "invPorEjecutar": {
+   "uf": 16545961.0,
+   "mmusd": 594.0
+  },
+  "empresa": "Grupo Costanera SpA",
+  "sociedad": "Sociedad Concesionaria Tramo Chacao - Chonchi",
+  "gerenteGeneral": {
+   "nombre": "Diego Savino Beltrán",
+   "correo": "savino@cnorte.cl",
+   "telefono": null
+  },
+  "ifConstruccion": {
+   "nombre": "Carlos Gudenschwager Barra",
+   "correo": "carlos.gudenschwager@mop.gov.cl",
+   "telefono": "56 9 9011 0932"
+  },
+  "ifSubConstruccion": {
+   "nombre": "Jazmine Pizarro Opazo",
+   "correo": "jazmine.pizarro@mop.gov.cl",
+   "telefono": "9 9343 0894"
+  },
+  "consultorAIF": "Consorcio Axioma - Bersal",
+  "jefeAIF": {
+   "nombre": "Carlos Gutiérrez",
+   "correo": "carlos.gutierrez@axioma.bersal.cl",
+   "telefono": "569 81541935"
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c19",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Soluciones Hídricas",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Coquimbo",
+  "provincia": "Elqui",
+  "comuna": "Coquimbo",
+  "volumen": "1.200 litros/segundos de agua",
+  "presupuesto": {
+   "uf": 8195000.0,
+   "mmusd": 325.0
+  },
+  "invMaterializada": {
+   "uf": null,
+   "mmusd": null
+  },
+  "invPorEjecutar": {
+   "uf": null,
+   "mmusd": null
+  },
+  "empresa": "Sacyr Agua S.L.",
+  "sociedad": "Sociedad Concesionaria Desaladora de Panul S.A",
+  "gerenteGeneral": {
+   "nombre": "Lucas de Marcos de La Torre",
+   "correo": "lmtorre@sacyr.com",
+   "telefono": 56958775483
+  },
+  "ifConstruccion": {
+   "nombre": "Lorena Araya Rojas",
+   "correo": "lorena.araya@mop.gov.cl",
+   "telefono": 937427844
+  },
+  "ifSubConstruccion": {
+   "nombre": "Marión Casanueva González",
+   "correo": "marion.casanueva@mop.gov.cl",
+   "telefono": 954005700
+  },
+  "consultorAIF": "CyD Ingeniería Ltda.",
+  "jefeAIF": {
+   "nombre": null,
+   "correo": null,
+   "telefono": null
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c20",
+  "tipoProyecto": "Operación y Construcción",
+  "tipoConstruccion": "Infraestructura Vial Interurbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Los Lagos",
+  "provincia": "Osorno y Llanquihue",
+  "comuna": "San Pablo, Osorno, Río Negro, Purranque, Frutillar, Llanquihue, Puerto Varas y Puerto Montt",
+  "volumen": "128,9 km",
+  "presupuesto": {
+   "uf": 20740000.0,
+   "mmusd": 821.0
+  },
+  "invMaterializada": {
+   "uf": null,
+   "mmusd": null
+  },
+  "invPorEjecutar": {
+   "uf": null,
+   "mmusd": null
+  },
+  "empresa": "Intervial Chile S.A.",
+  "sociedad": "RUTA DE LOS LAGOS SOCIEDAD CONCESIONARIA S.A.",
+  "gerenteGeneral": {
+   "nombre": "Pablo Anguita",
+   "correo": null,
+   "telefono": null
+  },
+  "ifConstruccion": {
+   "nombre": "Victor Raymondi Eldan",
+   "correo": "victor.raymondi@mop.gov.cl",
+   "telefono": 957631517
+  },
+  "ifSubConstruccion": {
+   "nombre": "Jazmine Pizarro Opazo",
+   "correo": "jazmine.pizarro@mop.gov.cl",
+   "telefono": "9 9343 0894"
+  },
+  "consultorAIF": null,
+  "jefeAIF": {
+   "nombre": null,
+   "correo": null,
+   "telefono": null
+  },
+  "observaciones": null
+ },
+ {
+  "id": "c21",
+  "tipoProyecto": "Construcción",
+  "tipoConstruccion": "Infraestructura Vial Urbana",
+  "tipoIniciativa": "Iniciativa Pública",
+  "region": "Biobío",
+  "provincia": "Biobío y Concepción",
+  "comuna": "Coronel y San Pedro de la Paz",
+  "volumen": "20 km",
+  "presupuesto": {
+   "uf": 9888579.39,
+   "mmusd": 355.0
+  },
+  "invMaterializada": {
+   "uf": null,
+   "mmusd": null
+  },
+  "invPorEjecutar": {
+   "uf": null,
+   "mmusd": null
+  },
+  "empresa": "Sacyr Concesiones Chile SpA.",
+  "sociedad": null,
+  "gerenteGeneral": {
+   "nombre": null,
+   "correo": null,
+   "telefono": null
+  },
+  "ifConstruccion": {
+   "nombre": "Tito Alfonso Fernández Molina",
+   "correo": "tito.fernandez@mop.gov.cl",
+   "telefono": 56992906757
+  },
+  "ifSubConstruccion": {
+   "nombre": "Jorge Vega López",
+   "correo": "jorge.vega.l@mop.gov.cl",
+   "telefono": 56957485978
+  },
+  "consultorAIF": null,
+  "jefeAIF": {
+   "nombre": null,
+   "correo": null,
+   "telefono": null
+  },
+  "observaciones": null
+ }
+];
 const NOMBRES_CONTRATO = {};
 DATA.forEach(c => NOMBRES_CONTRATO[c.id] = c.nombre);
 
