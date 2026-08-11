@@ -295,15 +295,25 @@ function valorInicioObra(f, fc){
   const real = f.inicio_obra_real;
   const estimada = f.inicio_obra_estimado;
   if(real && estimada){
-    const hoy = new Date(); hoy.setHours(0,0,0,0);
-    const fEst = parseFecha(estimada);
-    if(fEst && fEst > hoy){
+    if(esPlazoFuturo(estimada)){
       return { valor: estimada, comentario: fc.inicio_obra_estimado || fc.inicio_obra_real, esEstimadaSustituta: true };
     }
     return { valor: real, comentario: fc.inicio_obra_real || fc.inicio_obra_estimado, esEstimadaSustituta: false };
   }
   if(real) return { valor: real, comentario: fc.inicio_obra_real, esEstimadaSustituta: false };
   return { valor: estimada, comentario: fc.inicio_obra_estimado, esEstimadaSustituta: false };
+}
+
+function esPlazoFuturo(valor){
+  if(!valor) return false;
+  const hoy = new Date(); hoy.setHours(0,0,0,0);
+  const f = parseFecha(valor);
+  if(f) return f > hoy;
+  // Texto libre sin fecha exacta (ej. "Segundo Semestre 2030"): se busca el año más alto mencionado.
+  const anios = valor.match(/\b(20\d{2})\b/g);
+  if(!anios) return false;
+  const anioMax = Math.max(...anios.map(Number));
+  return anioMax >= hoy.getFullYear();
 }
 
 function celda(v, comentario){
@@ -378,10 +388,7 @@ function renderContrato(c, desde, hasta){
       <td>${(() => {
         const io = valorInicioObra(f, fc);
         const html = aplicaFiltroFecha ? celdaPendiente(io.valor, io.comentario) : celda(io.valor, io.comentario);
-        const hoy = new Date(); hoy.setHours(0,0,0,0);
-        const fVal = parseFecha(io.valor);
-        const esFutura = fVal && fVal > hoy;
-        return esFutura ? `<span class="estimada-sustituta" title="Fecha aún no ocurre">${html}</span>` : html;
+        return esPlazoFuturo(io.valor) ? `<span class="estimada-sustituta" title="Fecha aún no ocurre">${html}</span>` : html;
       })()}</td>
       <td class="${claseEstado(compararFechas(f.psp_real, f.psp_estimada || f.psp_estimada_sin_mod || f.psp_bali), '')}">${celdaPendiente(f.psp_estimada || f.psp_estimada_sin_mod, fc.psp_estimada || fc.psp_estimada_sin_mod)}</td>
       <td class="${claseEstado(compararFechas(f.psp_real, f.psp_estimada || f.psp_estimada_sin_mod || f.psp_bali), '')}">${celda(f.psp_real, fc.psp_real)}</td>
