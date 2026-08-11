@@ -378,7 +378,10 @@ function renderContrato(c, desde, hasta){
       <td>${(() => {
         const io = valorInicioObra(f, fc);
         const html = aplicaFiltroFecha ? celdaPendiente(io.valor, io.comentario) : celda(io.valor, io.comentario);
-        return io.esEstimadaSustituta ? `<span class="estimada-sustituta" title="Fecha estimada, aún no ocurre">${html}</span>` : html;
+        const hoy = new Date(); hoy.setHours(0,0,0,0);
+        const fVal = parseFecha(io.valor);
+        const esFutura = fVal && fVal > hoy;
+        return esFutura ? `<span class="estimada-sustituta" title="Fecha aún no ocurre">${html}</span>` : html;
       })()}</td>
       <td class="${claseEstado(compararFechas(f.psp_real, f.psp_estimada || f.psp_estimada_sin_mod || f.psp_bali), '')}">${celdaPendiente(f.psp_estimada || f.psp_estimada_sin_mod, fc.psp_estimada || fc.psp_estimada_sin_mod)}</td>
       <td class="${claseEstado(compararFechas(f.psp_real, f.psp_estimada || f.psp_estimada_sin_mod || f.psp_bali), '')}">${celda(f.psp_real, fc.psp_real)}</td>
@@ -418,11 +421,6 @@ function aplicarFiltros(){
   const hastaStr = document.getElementById('fHasta').value;
   const desde = desdeStr ? new Date(desdeStr + 'T00:00:00') : null;
   const hasta = hastaStr ? new Date(hastaStr + 'T23:59:59') : null;
-
-  if(!selId && !desde && !hasta){
-    document.getElementById('resultados').innerHTML = '<div class="panel empty-state">Selecciona un contrato, o un rango de fechas para revisar plazos de todos los contratos.</div>';
-    return;
-  }
 
   let lista = selId ? DATA.filter(c => c.id === selId) : DATA;
 
